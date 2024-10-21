@@ -1,0 +1,205 @@
+IF CONDITION
+IF ELSE CONDITION 
+FOR ELSE CONDITION
+LOOP
+WHILE LOOP
+FOR LOOP
+FUNCTIONS 
+TYPES OF WRITING ARGUMENTS
+
+
+if condition:
+condition j hale nii if condition execute huncha tara empty bhayo bhane chaii else condition execute garcha
+condition=[1]
+if condition:
+    print("inside if condition")
+else:
+    print("inside else condition")
+
+
+short hand haru khasai recommend hudaina 
+
+if else bhitra arko if else ko case ma short hand bata yesari lekhne:
+value = 1 if condition else 2 if condition2 else 3
+
+Switch Case:
+match keyword is used for expression a value in return
+
+ifelse ra match ko difference:
+ifelse ma jaba samma condition meet hudaina taba samma sabaii check gardaii bascha 
+match statement le sidai usko statement ma kun value ako cha sidai tesma jancha
+
+ifelse time consuming cha
+match less time consuming cha 
+
+switch case ma case naii nabhako value halyo kii error chaii audaina tara output nii audaina
+swicth case ma default value hudaina 
+
+# match statement
+arg = 2
+match arg:
+    case 0:
+        print("case 0")
+    case 1:
+        print("case 1")
+    case 2:
+        print("case 2")
+
+
+Loops:
+While loop:
+Syntax:
+i = 0
+while i<3:
+    print('value of i', i)
+    i += 1
+
+break statement:
+condition meet bhayo bhne rokdincha 
+
+continue statement:
+condition meet bhayo bhne skip gardincha 
+
+For loop:
+Syntax example
+names_list = ["Ram", "Shyam", "Hari"]
+for name in names_list:
+  print(name)
+
+range(0,5)
+start value ra end value include garcha
+range ko value extract garna sakdaina //for loop bhayo bhne chaii extract garna sakcha 
+generator return yield
+
+
+For loop string iterate garna nii use huncha:
+text = 'Students in NCCS are studious.'
+for character in text:
+    print('character is ', character)
+
+yesle 100 line samma matra output print garcha 
+yedii greater than 100 bhayo bhane TRUNCATE gardincha
+
+
+For else statement:
+khasai dheraii use hudaina 
+for ele in [1,2,3]:
+    if ele == 2:
+        print('break executes')
+        break
+else:
+    print("else executes")
+
+intendation ma isse ayo bhne error auna sakcha 
+
+PYTHON MA DO WHILE HUDAINAA	
+
+Function:
+function define garna 
+def function_name
+
+# Define a function
+def calculate_square(value):
+    squared_value = value * value
+    return squared_value
+
+# Calling a function
+result = calculate_square(5)
+print(result)
+
+default case ma tuple huncha jaba hamile variable ko case matra halchau
+
+Classification of function call on the basis of writing arguments:
+Positional arguments
+kKeyword arguments
+Default arguments
+Variable-length arguments
+Variable-length Keyword-arguments
+
+Argument ra parameter ko difference:
+variable define garne bhaneko parameter
+variable call garne bhaneko argument
+
+default argument:
+parameter ma define huncha
+default value bhaneko suru ma naii halchau 
+eg def function(a,b,c=1) //yesma 1 bhaneko c ko default value huncha
+
+default argument halisake pachii pachadi positional value halna mildaina 
+eg def function(a,b,c=1,d) //yesarii mildaina
+eg def function(a,b,d,c=1) //yesarii milcha
+
+def function(a,b,c,*arg) //jati panii value sabai *arg ma assign huncha first ko 3 ta chaii a,b,c ma assign huncha
+
+
+def function(a,b,c,**kwargs)//jatii panii value cha sabaii *kwargs ma assign garcha tara in a form of dictionary
+hamile suppose d=78 bhanera kwargs ma afaii assign bhayo bhne 
+op chaii key chaii d aucha tesko value chaii 78 aucha
+'d' : 78
+
+
+Examples of arguments
+Positional Arguments
+def temp_func(a,b):
+    c=a+b
+    return c
+
+temp_func(5,5)
+
+Keyword Arguments
+def temp_func(a,b):
+    c=a+b
+    return c
+
+temp_func(a=5,b=5)
+
+Default Arguments
+def temp_func(a,b=0):
+    c=a+b
+    return c
+
+temp_func(a=5)
+temp_func(7)
+temp_func(5,7)
+
+Variable-length arguments
+def temp_func(a,*args):
+    print(a,type(a))
+    print(args,type(args))
+    
+temp_func(4,5,6)
+temp_func(1,2,3,4)
+
+Variable-length Keyword-arguments
+def temp_func(a,**kwargs):
+    print(a,type(a))
+    print(kwargs,type(kwargs))
+    
+temp_func(3,b=4)
+temp_func(1,b=2,c=3,d=4)
+
+
+Lambda function:
+without any function method
+Syntax: lambda [arg1, [arg2,..., argn]]: expression
+
+# function defination
+    product = lambda arg1, arg2: arg1*arg2
+    result = product(1, 2)
+    print(result)
+
+product bhaneko lambda function laii represent garne variable
+
+
+Global ra local variables:
+value=0
+def function():
+    global value
+    print('from local space:',value)
+    value+=1
+
+print('from global space:',value)
+function()
+print('from global space:',value)
+
+

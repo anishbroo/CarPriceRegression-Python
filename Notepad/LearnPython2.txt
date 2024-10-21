@@ -1,0 +1,108 @@
+TYPES OF OPERATORS
+LIST
+LIST COMPREHENSION
+
+
+
+Operators:
+Arithmetic operators 
+Comparision operators
+Logical operators
+Identity operators
+is: a is b //a le chaii b ko value or b le chaii a ko value reference garcha
+is not: yesle gardaina 
+
+Membership operators: elements cha kii chaina check garcha
+in: 4 in array //tesma or any array ma 4 cha ki chaina herne boolean ma return garcha
+not in: 5 not in array //5 chaina bhanera check garcha
+
+
+Anaconda Prompt:
+Python version check: python --version
+pc ma k k package cha: pip list
+afnaii environment banauna: conda create -n environment_name python=version katii cha tetii
+anaconda ma k k environment cha ta:conda env list
+anaconda file activate garna laii: anaconda activate environment_name(workshop)
+package check garna: pip list
+
+
+Complex data types: inbuilt array support gardaina
+List []
+Dictionary {}
+Tuple ()
+Set
+
+List:
+list initialize garna square bracket [] or list() constructor
+Eg: a=[]	or  a=list()		
+    print(type(a))
+list ma parne method
+type()-list ko class check garcha
+append()-list ma data enter garne
+	a.append(11) //int
+	a.append(1.11)	//float
+	a.append(b) //another list
+
+Positive Indexing agadii bata suru huncha 0 1 2
+accessing a list: value =a[index]
+		  print(value)
+
+Negative Indexing: pachadi bata suru huncha -3 -2 -1 
+Eg: index=a[-1]
+print(value)
+
+katii khera use huncha bhanda array lamo cha ra hamilai last athawa second last ko index chaiyo bhane neg use garda better
+
+insert()-kun index ma kati value halne //replace chaii gardaina tara ek index chai sarcha 
+a.insert(kun_index_ma_halne,k_value_halne)
+print(a)
+
+remove()- kunai pani list lai remove gardincha
+a.remove(value_k_cha_tyo_halne)
+print(a)
+
+pop()-last ko element lai remove or storeor return pani garcha
+value=a.pop()
+print('list a',a)
+print(value)
+
+reverse()-list ko order reverse gardincha
+a.reverse()
+print(a)
+
+count()-kati choti same value repeat bhako cha ta bhanera yesle dekhaucha 
+countvalue=a.count(value_halne)
+print(countvalue)
+
+len()-determine number of elements
+num_elements=len(a)
+print(num_elements)
+
++ operator or extend()-joins two list or concatenate two lists
+a=[1,2]
+b=[3,4,5]
+res=a+b      a.extend(b)
+print(res)
+
+sort()-list haru sort gardincha ascending order ma
+b.sort()
+print(b)
+
+b.sort(reverse=True) //desacending order ma sort gardincha 
+
+clear()-clears all the elements bhannale object chaii delete hudaina tara tesbhitra ko list chaii sab clear huncha
+a.clear()
+
+
+List Comprehension
+Syntax: new_list=[expression(element) for element in some_iterable if condition]
+Eg:
+list=[1,2,3]
+list=[val**2 for val in list] //each value laii square gardincha
+
+
+
+
+
+
+

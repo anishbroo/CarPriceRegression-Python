@@ -1,0 +1,91 @@
+BASICS
+COMMENTS
+PRINT
+OPERATORS
+POWER 
+STRING METHODS
+
+
+Comments:
+# for single line comment
+Eg: #This is an example of comment
+
+"' for multiline comment
+Eg: "' This is an example
+of Multiline comment"'
+
+Can also name # in each line
+Eg: #This is also
+#an example of multiline
+#comment
+
+
+Print:
+print(....);
+
+
+Variable define kasari garne:
+type(variable_name);
+
+
+Swapping two value garna laii:
+a=5;
+b=4;
+a,b=b,a; //yetii gare pugcha
+
+
+Pascal Case:
+1. computer_name
+2. brand_ambassador
+
+Camel Case:
+1. computerName
+2. brandAmbassador
+
+
+Eutai value multiple data ma halna paryo kii:
+a=b=c=1000;
+
+
+To count the length of the string:
+var_name='NCCS is'
+len(var) //It also counts the white spaces so the length is 7.
+print(var_name,'not a nice college');
+
+
+Format() function:
+var="Number is{}".format(81);
+print(var)
+op: Number is 81
+
+var="Number is {1} {0}".format(54,65);
+print(var);
+op:Number is 65 54. //Index anusar print huncha 
+
+
+
+String Methods:
+len()-to count the lenght of the string
+upper()-convert string into uppercase
+lower()-convert string into lowercase
+title()-converts first character of a string of each word  to capital
+swapcase()-converts uppercase to lowercase or vice versa of a string
+capitalize()-converts first letter of a sentence of a string to uppercase
+endswith()-sentence kesbata end bhako cha declare garyo bhanera boolean value dincha i.e. true or false
+startswith()-sentence kesbata suru bhako cha declare garyo bhanera boolean value dincha i.e. true or false
+strip()-removes white spaces of start and end side of a string
+lstrip()-left ko matra white space hataucha
+rstrip()-right ko matra white space hataucha
+split()-string laii chutaucha k ko adhar ma bhanda teta split ma value diyeko adhar ma chutaucha 
+replace()-kun value laii kesle replace garne ta string ma bhne yo use garne Syntax: var_name.replace('keslai_replace_garne','kesle_replace_garne');
+
+
+Operators:
+a++ and a-- is not used in python
+instead a+=1 or a=a+1 is used;
+
+
+Power:
+** le power denote garcha
+2**2 bhaneko 2 ko square;
+2**3 bhaneko 2 ko cube;

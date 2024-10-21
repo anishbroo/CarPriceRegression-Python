@@ -1,0 +1,29 @@
+data[data.duplicated()]
+data.duplicated() le boolean value dincha
+
+data[data['X2 house age'] == 11] //X2 house age ma 11 bhako value dekhaucha
+
+data.isnull().sum() //isnull le null value dekhaucha anii yesle chaii kunai row ma katii ota null value cha add garcha
+
+data.corr()
+
+STEPS:
+1. Import all the necessary library.
+2. Load the data
+3. Perform EDA (Exploratory Data Analysis)
+	(i.) Null Values Check
+		a. Either Remove/Fill
+	(ii.) Duplicated Rows
+		b. Remove
+4. Feature Engineering (To know feature importance/which feature to select)
+	i. Correlation
+	ii. Removed poorly correlated columns
+5. Split into independent and dependent features (x,y)
+6. Split the data into Train and Test set(X_train, X_test, y_train, y_test)
+7. Create the instance of the model. (Eg lr-model=LinearRegression()) (Class of algorithm)
+8. Fit the data into algorithm(use .fit() method)
+9. Check the metrices (Accuracy/Errors)
+
+Object haru check garne anii ordinal cha bhaye LabelEncoding (sklearn.preprocessing.LabelEncoder) i.e. Grade A+,A
+anii color red green etc testo features categorical cha bhaye One-Hot Encoding (pandas.get_dummies()) garne
+

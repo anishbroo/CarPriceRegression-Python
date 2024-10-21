@@ -1,0 +1,47 @@
+PANDAS
+MATPLOTLIB
+
+
+describe()
+
+info()-columns ma NAN shell katii ota cha ra empty shell katii ota cha tesko info dincha
+datatype obj bhnyo kii string value bujne
+
+inplace-jun dataframe ma kaam gareko teii dataplace ma replace gardincha naya banaudaina
+
+dropna(inplace=True)-removes empty shell from row
+
+fillna('value',inplace=True)-empty shell bhako thau ma tyo haleko value jancha
+df['column_name'].fillna(0,inplace=True)-replaces Nan value from column
+
+Mean mode ra median value dekhaucha
+num_emp_mean=df['Number of employees'].mean() .median() .mode()
+df['Number of employees'].fillna(num_emp_,eam,inplace=True)
+
+rename garcha column ko name:
+df.rename(colums=
+	{'old_column_name':'new_column_name'}
+	inplace=True
+)
+
+adding new rows garne tarika:
+dictionary create garne
+
+new_data={'column_name':'value'} //dictionary data matra ho dataframe ma add bhako chaina 
+add garna laii naya dataframe ma halera anii purano sanga concatenate garne
+new_row=pd.DataFrame(new_data,index=[0])
+df=pd.concat([new_row,df).reset_index(drop=True)
+
+naya row thapyo bhne jaile top ma add huncha anii indexing ko value 0 0 naya ra purano ko top ma bhako same huncha 
+tesaile paila index lai reset gardina parcha
+
+df=df.reset_index(drop=True)
+df.head()
+
+drop_duplicates()-dataframe ma bhako sabaii duplijcate elements laii hataidiincha
+df=df.drop_duplicates(subset=['column_name1','column_name2'],keep='last')
+yesto case ma chaii duitaii column ma same value cha bhaye remove gardincha
+
+nunique()-number of unique value dekhaucha
+reset_index()- le bhako index hatayera naya index lyaidincha
+

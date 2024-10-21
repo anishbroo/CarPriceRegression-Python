@@ -1,0 +1,94 @@
+Inheritance:
+
+class Person(object): ra class Person: lekhnu eutaii ho
+Base class:
+class Person(object):
+    # Constructor
+    def __init__(self, name):
+        self.name = name
+ 
+    # To get name
+    def get_name(self):
+        return self.name
+ 
+    # To check if this person is an employee
+    def is_employee(self):
+        return False
+
+Derived class:
+class Employee(Person):
+    # constructor
+    def __init__(self, id, name):
+        self.id = id
+
+        Person.__init__(self, name)
+        # super().__init__(name)
+
+    # Here we return true
+    def is_employee(self):
+        return True
+
+
+super: base class kun ho bhanera chaii represent garcha
+	siddaii parameter k k cha tyo matra pathaye nii pugcha
+
+Types of inheritance:
+Single Inheritance
+Multiple Inheritance
+Multilevel Inheritance
+Hierarchical Inheritance
+Hybrid Inheritance
+
+
+Single Inheritance:
+euta base class huncha arko derive class huncha
+Euta base class ko euta matra derive class huncha
+euta base class bata multiple derive class banauna mildaina
+
+Multiple Inheritance:
+euta base class ko multiple derive class huncha 
+Class A
+Class B
+Class C(A,B):
+
+Multilevel Inheritance:
+euta base class bata derive class banaucha tara ferii teii derive class laii base class manera arko derive class banaucha
+Class A:
+
+Class B(A):
+
+Class C(B):
+
+Hierarchical Inheritance:
+euta base class huncha tyo class laii matra base class manera arko multiple derive class banaucha
+eg: Class B(A):
+    Class C(A):
+    Class D(A):
+
+Hybrid Inheritance:
+mathyy ko given combine bhayera baneko inheritance laii hybrid bhanincha 
+doesn't have to be all combined tara two or more than two combine bhaye pugcha
+eg:
+Class A:
+Class B(A,C):
+Class C:
+Class D(C):
+
+Abstract Class:
+
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def num_sides(self):
+        pass
+
+class Square(Shape):
+    def num_sides(self):
+        return 4
+
+class Triangle(Shape):
+    def num_sides(self):
+        return 2
+
+pass keyword: statement keii chaina execute garne keii chaina bhaye pass lekhne natra error aucha

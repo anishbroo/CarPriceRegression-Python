@@ -1,0 +1,42 @@
+OOP
+
+function overloading 
+func(a,b,c):
+
+to access class variable or instance variable we access using dot (.) attribute
+person=People()		//here person is obj, People() is constructor
+person2=People()  
+
+def_init_(self,name,age):  	//self value ma reference lincha like this in java
+	self.name=name 		//. garera access gareko 
+				//self nalekhi j rakheni huncha tara standard practice self ho
+
+//To initialize
+p1=People('Hari',20)
+
+
+class ko baira obj access garnalai class ko name nai use garcham 
+class ko bhitra obj access garnalai self ko use garcham
+
+class variable constructor baira declare garni
+instance variable constructor bhitra declare garni
+
+self.var1=var1		//public variable
+self.__var2=var2  	//duita underscore le private banaucha 
+
+
+INHERITANCE
+base class 
+derived class :-
+class Employee(Person)		//employee is derived class of person class
+
+derived class has its own constructor and methods 
+
+super fuction use garera base class ko attribute haru access garna milcha 
+
+types of inheritance:-
+single
+multiple
+multilevel
+hierarchical
+hybrid

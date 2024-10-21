@@ -1,0 +1,4 @@
+About Dataset
+context
+64- numeric sensor data,
+classification 2 pose

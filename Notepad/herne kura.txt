@@ -1,0 +1,9 @@
+Unsupervised learning algorithm 
+1. k-means
+2. k nearest neighbor
+
+supervised learning algorithm
+decision tree classifier 
+decision tree regression
+random forest 
+support vector machine 

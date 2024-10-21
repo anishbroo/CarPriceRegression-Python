@@ -1,0 +1,2 @@
+we are in classwe are studing python.Thisline is added from append mode.
+Thisline is added from append mode.

@@ -1,0 +1,30 @@
+Local repository ma git chalauna laii ho yo sab
+git init 
+git status
+git add file name
+git commit -m "file.py file added" //message dincha
+git config --global user.name"anishbroo" //username set
+git config --global user.email "anishbroo10@gmail.com"
+harek time git status check garirakhna parcha
+git add file.py //ferii garne kina bhane changes commit garna laii
+git commit -m "label added to print statement"
+
+naya file create garna touch command use garcham
+touch .gitignore
+git log --oneline
+git reset 1882f7c
+git add . //current directory ma bhako jatii panii files cha sab add garcha except ignore files
+
+
+webapp
+dir //tyo directory ma k files cha check garne
+import streamlit as st garne
+st.write("Anishbroo")
+streamlit run streamlit_app.py //run garna laii
+
+st.sidebar.slider('age', 0, 110)
+age=st.sidebar.slider('age', 0, 110)
+st.write(f"Value of age from slider is{age}")
+
+streamlit ko documentation padhnu paryo bhne
+streamlit.io bhitra huncha
